@@ -16,15 +16,9 @@ export type DeviceCategory = Record<string, Device[]> & {
 export const devicesData: DeviceCategory = {
 	Xiaomi: [
 		{
-<<<<<<< HEAD
 			name: "Redmi Turbo 3",
 			image: "/images/device/t3.jpg",
 			specs: "墨晶 / 12G + 256GB",
-=======
-			name: "OnePlus 13T",
-			image: "/images/device/oneplus13t.webp",
-			specs: "Gray / 16G + 1TB",
->>>>>>> upstream/master
 			description:
 				"狂暴引擎3.0，90W闪充，5000mAh电池，120Hz屏幕，5000万主摄",
 			link: "https://www.mi.com/prod/redmi-turbo-3",
@@ -39,7 +33,6 @@ export const devicesData: DeviceCategory = {
 	],
 	Huawei: [
 		{
-<<<<<<< HEAD
 			name: "Nova 7 Se",
 			image: "/images/device/OIP-C.webp",
 			specs: "鸿蒙OS，越用越流畅",
@@ -61,14 +54,6 @@ export const devicesData: DeviceCategory = {
 			specs: "i3-8100 / 16G + ???G",
 			description: "史上最垃圾的服务器",
 			link: "https://www.biostar.com.tw/app/en/mb/introduction.php?S_ID=917",
-=======
-			name: "GL-MT3000",
-			image: "/images/device/mt3000.webp",
-			specs: "1000Mbps / 2.5G",
-			description:
-				"Portable WiFi 6 router suitable for business trips and home use.",
-			link: "https://www.gl-inet.cn/products/gl-mt3000/",
->>>>>>> upstream/master
 		},
 	],
 };
