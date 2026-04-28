@@ -21,21 +21,12 @@ export const friendsData: FriendItem[] = [
 		tags: ["Blog"],
 	},
 	{
-<<<<<<< HEAD
 		id: 10,
 		title: "叶子のBlog",
 		imgurl: "https://q2.qlogo.cn/headimg_dl?dst_uin=319213657&spec=0",
 		desc: "饭多伤胃，话多伤心",
 		siteurl: "https://blog.goshujin.top/",
 		tags: ["Blog"],
-=======
-		id: 2,
-		title: "Mizuki Docs",
-		imgurl: "https://q.qlogo.cn/headimg_dl?dst_uin=3231515355&spec=640&img_type=jpg",
-		desc: "Mizuki User Manual",
-		siteurl: "https://docs.mizuki.mysqil.com",
-		tags: ["Docs"],
->>>>>>> upstream/master
 	},
 	{
 		id: 11,
