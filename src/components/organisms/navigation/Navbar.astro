@@ -113,6 +113,11 @@ const iconWebpSrc = hasIconPngFallback ? iconSrc.replace(/\.png$/i, ".webp") : i
                 <WallpaperSwitch client:only="svelte"></WallpaperSwitch>
             </div>
             <ThemeSwitch client:only="svelte"></ThemeSwitch>
+            {siteConfig.trainIcon?.enable && (
+                <a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener noreferrer" aria-label="Train" class="btn-plain scale-animation rounded-lg h-11 w-11 active:scale-90 inline-flex items-center justify-center">
+                    <Icon name="material-symbols:train-outline" class="text-[1.25rem]"></Icon>
+                </a>
+            )}
             <button aria-label="Menu" name="Nav Menu" class="btn-plain scale-animation rounded-lg w-11 h-11 active:scale-90 md:!hidden" id="nav-menu-switch">
                 <Icon name="material-symbols:unfold-more" class="text-[1.25rem]"></Icon>
             </button>

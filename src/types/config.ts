@@ -491,6 +491,15 @@ export interface ShareConfig {
 }
 
 /**
+ * 线路检测组件配置
+ */
+export type LineDetectorConfig = {
+	enable: boolean; // 是否启用线路检测
+	domesticUrl: string; // 国内线路URL
+	internationalUrl: string; // 国外线路URL
+};
+
+/**
  * 相关文章组件配置
  */
 export interface RelatedPostsConfig {

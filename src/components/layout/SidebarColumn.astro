@@ -1,5 +1,6 @@
 ---
 import { SidebarTOC } from "@components/features/toc";
+import LineDetector from "../widget/LineDetector.astro";
 import type { MarkdownHeading } from "astro";
 
 import { widgetManager } from "@/utils/widget-manager";
@@ -52,6 +53,7 @@ const componentMap: Record<string, unknown> = {
 	"music-sidebar": MusicSidebarWidget,
 	"site-stats": SiteStats,
 	calendar: Calendar,
+	"line-detector": LineDetector,
 };
 
 type WidgetComponentConfig = ReturnType<
