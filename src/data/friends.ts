@@ -100,6 +100,14 @@ export const friendsData: FriendItem[] = [
 		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=3833773438&s=640",
 		tags: ["Blog"],
 	},
+	{
+		id: 20,
+		title: "流欺の博客",
+		imgurl: "https://tc.lqay.cn/LightPicture/2026/03/5f64e0f0f361e19c.png",
+		desc: "嗯对就是个博客",
+		siteurl: "https://blog.lqay.cn",
+		tags: ["Blog"],
+	},
 ];
 
 // 获取所有友情链接数据
