@@ -251,6 +251,12 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接，支持多级菜单
 		{
+			name: "Arcwolf Home",
+			url: "https://home.arcwolf.top",
+			icon: "material-symbols:home",
+			external: true,
+		},
+		{
 			name: "Friends",
 			url: "/friends/",
 			icon: "material-symbols:group",

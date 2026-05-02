@@ -1,5 +1,5 @@
 import sitemap from "@astrojs/sitemap";
-import mdx from '@astrojs/mdx';
+import mdx from "@astrojs/mdx";
 import svelte, { vitePreprocess } from "@astrojs/svelte";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
@@ -8,6 +8,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
+import indexnow from "astro-indexnow";
 import { oddmisc } from "oddmisc";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeComponents from "rehype-components";
@@ -42,8 +43,12 @@ export default defineConfig({
 	integrations: [
 		oddmisc({
 			umami: {
-				shareUrl: false,
+				shareUrl: "https://umami.arcwolf.top/share/6ZLUz3bUyr2crSYG",
 			},
+		}),
+		indexnow({
+			key: process.env.INDEXNOW_KEY,
+			enabled: !!process.env.INDEXNOW_KEY,
 		}),
 		swup({
 			theme: false,

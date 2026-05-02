@@ -62,6 +62,9 @@ importers:
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
+      astro-indexnow:
+        specifier: ^2.1.1
+        version: 2.1.1(astro@6.1.2(@types/node@25.6.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3))
       axios:
         specifier: ^1.15.0
         version: 1.15.0
@@ -1426,11 +1429,6 @@ packages:
     cpu: [x64]
     os: [darwin]
 
-  '@pagefind/freebsd-x64@1.5.2':
-    resolution: {integrity: sha512-7EVzo9+0w+2cbe671BtMj10UlNo83I+HrLVLfRxO731svHRJKUfJ/mo05gU14pe9PCfpKNQT8FS3Xc/oDN6pOA==}
-    cpu: [x64]
-    os: [freebsd]
-
   '@pagefind/linux-arm64@1.5.2':
     resolution: {integrity: sha512-Ovt9+K35sqzn8H3ZMXGwls4TD/wMJuvRtShHIsmUQREmaxjrDEX7gHckRCrwYJ4XE1H1p6HkLz3wukrAnsfXQw==}
     cpu: [arm64]
@@ -2265,6 +2263,12 @@ packages:
 
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
+
+  astro-indexnow@2.1.1:
+    resolution: {integrity: sha512-0kpz5V7+fz/BKislmTBK6odi+kFs3zLWXQGjh9y9xEjc5qMhX4UhwPYTAdDaRXZASKhsUP/RCW2D28cLe/2/Mg==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      astro: ^4.0.0 || ^5.0.0 || ^6.0.0
 
   astro@6.1.2:
     resolution: {integrity: sha512-r3iIvmB6JvQxsdJLvapybKKq7Bojd1iQK6CCx5P55eRnXJIyUpHx/1UB/GdMm+em/lwaCUasxHCmIO0lCLV2uA==}
@@ -7895,9 +7899,6 @@ snapshots:
   '@pagefind/darwin-x64@1.5.2':
     optional: true
 
-  '@pagefind/freebsd-x64@1.5.2':
-    optional: true
-
   '@pagefind/linux-arm64@1.5.2':
     optional: true
 
@@ -8785,6 +8786,10 @@ snapshots:
       '@iconify/utils': 2.3.0
     transitivePeerDependencies:
       - supports-color
+
+  astro-indexnow@2.1.1(astro@6.1.2(@types/node@25.6.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)):
+    dependencies:
+      astro: 6.1.2(@types/node@25.6.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3)
 
   astro@6.1.2(@types/node@25.6.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@2.80.0)(stylus@0.64.0)(terser@5.46.1)(typescript@5.9.3)(yaml@2.8.3):
     dependencies:
@@ -11974,7 +11979,6 @@ snapshots:
     optionalDependencies:
       '@pagefind/darwin-arm64': 1.5.2
       '@pagefind/darwin-x64': 1.5.2
-      '@pagefind/freebsd-x64': 1.5.2
       '@pagefind/linux-arm64': 1.5.2
       '@pagefind/linux-x64': 1.5.2
       '@pagefind/windows-arm64': 1.5.2
